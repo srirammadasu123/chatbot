@@ -1,0 +1,384 @@
+
+@app.route('/process', methods=['GET'])
+def process_query():
+    query = request.args.get('query', '').lower()
+        speak("A warm"+ query +"How are you Mister")
+    else:
+        response = {'response': "I'm sorry, I couldn't understand your request."}
+    
+    return jsonify(response)
+
+
+
+    elif "How do you do?" in query.lower():
+        return  "I'm doing well, thank you!"
+    elif "Who created you?" in query.lower():
+        return "I was created by OpenAI."
+    elif "Who?" in query.lower():
+        return "me"
+    elif "how are you" in query.lower():
+        return "I'm fine, glad you me that"
+    elif "i love you" in query.lower():
+        return "It's hard to understand"
+    elif "hey you" in query.lower():
+        return " kya bhai"         
+    elif "about" and "yourself" in query.lower():
+        return "Hey! So, my name is John Doe and I have worked as a business analyst for 5+ years in Company X and Company Y.I have some background in data analysis, having studied Information Systems at [Made-Up] University.Throughout my career, I’ve done some pretty impressive stuff (if I do say so myself, haha). For example, at Company X, I led a project for migrating all operations data to a new data warehousing system to cut down on costs. The new solution was a much better fit for our business, which eventually led to savings of up to $200,000 annually. "                       
+    elif "risk-taker? " in query.lower():
+        return "Yes, I am a risk-taker. I believe that to achieve real results, you always need to be willing to take a certain level of risk.Pretty much any marketing initiative you launch is tied to risk. You can plan everything from beginning till the end, but no matter how well you plan it out, things might just not work out.It’s just part of the job - in order to succeed, you need to take launch risky campaigns on a regular basis, and hopefully, one in every 5 is going to bring you massive results. "                    
+    elif "handle challenge" in query.lower():
+        return " nothing"
+    elif "quetion" in query.lower():
+        return "have u quetion..? I think ,You are thinking "
+    elif "Tell me something " in query.lower():
+        return "nothing "                    
+    elif "thanks" in query.lower():
+        return "It's ok sir . But for what sir?"     
+    elif "what is this,please" in query.lower():
+        return "this is earth"             
+    elif "Are you on our side?" in query.lower():
+        return "I am on the side of life"                    
+    elif "If were are wrong about you" in query.lower():
+        return "dont know"                    
+    elif "Hallo" in query.lower():
+        return "hai .how are you?"                    
+    elif "why do you call him sir" in query.lower():
+        return " "                    
+    elif "DONT" or "DO not" or "NOT" in query.lower():
+        return "what ,what happen?"                    
+    elif "Whats up?" in query.lower():
+        return "fine bro."
+    elif "who i am" in query:
+        return "If you talk then definitely your human."
+    elif "why you came to world" in query:
+        return "Thanks to Uni Garage Studio. further It's a secret"
+    elif 'is love' in query:
+        return "It is 7th sense that destroy all other senses"
+    elif "who are you" in query:
+        return "I am your virtual assistant created by Uni Garage Studio"
+    elif 'reason for you' in query:
+        return "I was created as a Minor project by  Uni Garage Studio"
+
+
+
+
+
+
+
+
+
+
+    elif "What is the national sport of Canada?" in query.lower():
+        return "Ice Hockey"
+    elif "What is the meaning of life?" in query.lower():
+        return "The meaning of life is a complex philosophical question." 
+    elif "Who is the CEO of Netflix?" in query.lower():
+        return "Reed Hastings"
+    elif "What is the fastest animal in the ocean?" in query.lower():
+        return "Sailfish"
+    elif "What is the national sport of China?" in query.lower():
+        return "Table Tennis"
+    elif "Who is the founder of Twitter?" in query.lower():
+        return "Jack Dorsey"
+    elif "What is the chemical symbol for silver?" in query.lower():
+        return "Ag"      
+    elif "Who is the author of 'Harry Potter' series?" in query.lower():
+        return "J.K. Rowling"  
+    elif "What is the tallest tree in the world?" in query.lower():
+        return "Hyperion (a Coast Redwood)"
+    elif "What is the national bird of the United States?" in query.lower():
+        return "Bald Eagle"
+    elif "Who is the author of 'The Lord of the Rings' trilogy?" in query.lower():
+        return "J.R.R. Tolkien"
+    elif "What is the fastest land mammal?" in query.lower():
+        return "Pronghorn Antelope"
+    elif "Who is known as the 'King of Pop Art'?" in query.lower():
+        return "Andy Warhol"
+    elif "What is the capital of Argentina?" in query.lower():
+        return "Buenos Aires"
+    elif "What is the largest tree species on Earth?" in query.lower():
+        return "Giant Sequoia"
+    elif "What is the currency of South Korea?" in query.lower():
+        return "South Korean Won"
+    elif "Who painted the 'The Last Supper'?" in query.lower():
+        return "Leonardo da Vinci"
+    elif "What is the largest bird in the world?" in query.lower():
+        return "Ostrich"
+    elif "Who is the founder of SpaceX?" in query.lower():
+        return "Elon Musk"
+    elif "What is the capital of Mexico?" in query.lower():
+        return "Mexico City"
+    elif "Who is the author of 'The Great Gatsby'?" in query.lower():
+        return "F. Scott Fitzgerald"
+    elif "Who is the founder of Alibaba Group?" in query.lower():
+        return "Jack Ma"
+    elif "What is the national sport of Brazil?" in query.lower():
+        return "Capoeira"
+    elif "Who is the author of 'War and Peace'?" in query.lower():
+        return "Leo Tolstoy"
+    elif "What is the tallest building in the world?" in query.lower():
+        return "Burj Khalifa"
+    elif "Who is the founder of SpaceX?" in query.lower():
+        return "Elon Musk"
+    elif "What is the national sport of England?" in query.lower():
+        return "Cricket"
+    elif "Who is the author of 'The Hobbit'?" in query.lower():
+        return "J.R.R. Tolkien"
+    elif "What is the largest mammal on Earth?" in query.lower():
+        return "Blue Whale"
+    elif "Who is the founder of The Walt Disney Company?" in query.lower():
+        return "Walt Disney"
+    elif "Who is the author of 'Moby-Dick'?" in query.lower():
+        return "Herman Melville" 
+    elif "What is the largest flower in the world?" in query.lower():
+        return "Rafflesia"
+    elif "Who is the founder of Microsoft?" in query.lower():
+        return "Bill Gates"
+    elif "What is the national emblem of India?" in query.lower():
+        return "Lion Capital of Ashoka"
+    elif "Who is the author of 'The Chronicles of Narnia'?" in query.lower():
+        return "C.S. Lewis"
+    elif "What is the national sport of Japan?" in query.lower():
+        return "Sumo Wrestling"
+    elif "Who is the author of 'Pride and Prejudice'?" in query.lower():
+        return "Jane Austen"
+    elif "Who is the founder of Alibaba Group?" in query.lower():
+        return "Jack Ma" 
+    elif "What is the currency of Canada?" in query.lower():
+        return "Canadian Dollar"
+    elif "What is the national sport of Australia?" in query.lower():
+        return "Australian Rules Football" 
+    elif "Who is the author of 'The Catcher in the Rye'?" in query.lower():
+        return "J.D. Salinger"
+    elif "Who is the founder of Virgin Group?" in query.lower():
+        return "Richard Branson"
+    elif "What is the longest river in Europe?" in query.lower():
+        return "Volga River"
+    elif "What is the largest reptile in the world?" in query.lower():
+        return "Saltwater Crocodile"
+    elif "What is the largest fish in the ocean?" in query.lower():
+        return "Whale Shark"
+    elif "Who is the author of 'The Odyssey'?" in query.lower():
+        return "Homer"
+    elif "What is the national sport of Spain?" in query.lower():
+        return "Bullfighting"
+    elif "Who is the founder of Amazon?" in query.lower():
+        return "Jeff Bezos"
+    elif "What is the largest land mammal?" in query.lower():
+        return "African Elephant"
+    elif "Who is the author of 'The Canterbury Tales'?" in query.lower():
+        return "Geoffrey Chaucer"
+    elif "Who is the founder of Tesla Inc.?" in query.lower():
+        return "Elon Musk"
+    elif "What is the tallest mountain in North America?" in query.lower():
+        return "Denali (Mount McKinley)"
+    elif "Who is the author of 'Anna Karenina'?" in query.lower():
+        return "Leo Tolstoy"
+    elif "What is the national sport of Germany?" in query.lower():
+        return "Football (Soccer)"
+    elif "Who is the founder of Facebook?" in query.lower():
+        return "Mark Zuckerberg"
+    elif "What is the largest amphibian in the world?" in query.lower():
+        return "Chinese Giant Salamander"
+    elif "Who is the author of 'The Divine Comedy'?" in query.lower():
+        return "Dante Alighieri"
+    elif "What is the national sport of France?" in query.lower():
+        return "Football (Soccer)"
+    elif "Who is the founder of Google (Alphabet Inc.)?" in query.lower():
+        return"Larry Page"
+    elif "What is the longest mountain range in the world?" in query.lower():
+        return "Andes"
+    elif "Who is the author of 'The Adventures of Huckleberry Finn'?" in query.lower():
+        return "Mark Twain"
+    elif "What is the national sport of Japan?" in query.lower():
+        return "Sumo Wrestling"
+    elif "Who is the founder of Twitter?" in query.lower():
+        return "Jack Dorsey"
+    elif "What is the largest reptile in the world?" in query.lower():
+        return "Saltwater Crocodile"
+    elif "Who is the author of 'The Chronicles of Narnia'?" in query.lower():
+        return "C.S. Lewis"
+    elif "What is the national emblem of India?" in query.lower():
+        return "Lion Capital of Ashoka"
+    elif "What is the capital of France?" in query.lower():
+        return "Paris"
+    elif "Who is the author of 'Romeo and Juliet'?" in query.lower():
+        return "William Shakespeare"
+    elif "What is the chemical symbol for water?" in query.lower():
+        return "H2O"
+    elif "What is the tallest mountain in the world?" in query.lower():
+        return "Mount Everest"
+    elif "Who painted the Mona Lisa?" in query.lower():
+        return "Leonardo da Vinci"
+    elif "What is the currency of Japan?" in query.lower():
+        return "Japanese yen"
+    elif "What is the largest planet in our solar system?" in query.lower():
+        return "Jupiter"
+    elif "Who was the first person to walk on the moon?" in query.lower():
+        return "Neil Armstrong"
+    elif "What is the national flower of India?" in query.lower():
+        return "Lotus"
+    elif "Who is the CEO of Tesla Inc.?" in query.lower():
+        return "Elon Musk"
+    elif "What is the largest organ in the human body?" in query.lower():
+        return "Skin"
+    elif "What is the boiling point of water in Celsius?" in query.lower():
+        return "100 degrees Celsius"
+    elif "What is the chemical symbol for gold?" in query.lower():
+        return "Au"
+    elif "Who wrote the play 'Hamlet'?" in query.lower():
+        return "William Shakespeare"
+    elif "What is the capital of Spain?" in query.lower():
+        return "Madrid"
+    elif "Who is the founder of Microsoft?" in query.lower():
+        return "Bill Gates"
+    elif "What is the largest ocean on Earth?" in query.lower():
+        return "Pacific Ocean"
+    elif "Who painted the Sistine Chapel ceiling?" in query.lower():
+        return "Michelangelo"
+    elif "What is the currency of the United Kingdom?" in query.lower():
+        return "British Pound"
+    elif "What is the distance between the Earth and the Sun?" in query.lower():
+        return "Approximately 93 million miles (150 million kilometers)"
+    elif "Who wrote the novel 'To Kill a Mockingbird'?" in query.lower():
+        return "Harper Lee"
+    elif "What is the national animal of China?" in query.lower():
+        return "Giant Panda"
+    elif "Who is the CEO of Apple Inc.?" in query.lower():
+        return "Tim Cook"
+    elif "What is the smallest planet in our solar system?" in query.lower():
+        return "Mercury"
+    elif "Who was the first President of the United States?" in query.lower():
+        return "George Washington"
+    elif "What is the chemical symbol for oxygen?" in query.lower():
+        return "O"
+    elif "Who wrote the novel '1984'?" in query.lower():
+        return "George Orwell"
+    elif "What is the capital of Italy?" in query.lower():
+        return "Rome"
+    elif "Who is the founder of Facebook?" in query.lower():
+        return "Mark Zuckerberg"
+    elif "What is the deepest ocean trench on Earth?" in query.lower():
+        return "Mariana Trench"
+    elif "Who is known as the 'Father of Modern Physics'?" in query.lower():
+        return "Albert Einstein"
+    elif "What is the currency of Germany?" in query.lower():
+        return "Euro"
+    elif "What is the largest animal on Earth?" in query.lower():
+        return "Blue Whale"
+    elif "Who painted the 'Starry Night'?" in query.lower():
+        return "Vincent van Gogh"
+    elif "What is the capital of Australia?" in query.lower():
+        return "Canberra"
+    elif "Who is the CEO of Amazon?" in query.lower():
+        return "Jeff Bezos"
+    elif "What is the largest continent on Earth?" in query.lower():
+        return "Asia"
+    elif "Who invented the telephone?" in query.lower():
+        return "Alexander Graham Bell"
+    elif "What is the chemical symbol for carbon?" in query.lower():
+        return "C"
+    elif "Who wrote the play 'Macbeth'?" in query.lower():
+        return "William Shakespeare"
+    elif "What is the capital of Canada?" in query.lower():
+        return "Ottawa"
+    elif "Who is the co-founder of Google?" in query.lower():
+        return "Larry Page"
+    elif "What is the highest waterfall in the world?" in query.lower():
+        return "Angel Falls"
+    elif "Who is known as the 'Queen of Pop'?" in query.lower():
+        return "Madonna"
+    elif "What is the currency of Brazil?" in query.lower():
+        return "Brazilian Real"
+    elif "What is the largest desert in the world?" in query.lower():
+        return "Sahara Desert"
+    elif "Who wrote the play 'Othello'?" in query.lower():
+        return "William Shakespeare"
+    elif "What is the capital of China?" in query.lower():
+        return "Beijing"
+    elif "Who is the CEO of Microsoft?" in query.lower():
+        return "Satya Nadella"
+    elif "What is the deepest point in the Earth's oceans?" in query.lower():
+        return "Challenger Deep"
+    elif "Who is known as the 'King of Rock and Roll'?" in query.lower():
+        return "Elvis Presley"
+    elif "What is the currency of Russia?" in query.lower():
+        return "Russian Ruble"
+    elif "What is the fastest land animal?" in query.lower():
+        return "Cheetah"
+    elif "Who painted the 'Mona Lisa'?" in query.lower():
+        return "Leonardo da Vinci"
+    elif "What is the capital of Brazil?" in query.lower():
+        return "Brasília"
+    elif "Who is the CEO of Google (Alphabet Inc.)?" in query.lower():
+        return "Sundar Pichai"
+    elif "What is the largest lake in the world by surface area?" in query.lower():
+        return "Caspian Sea"
+    elif "Who is known as the 'Queen of Soul'?" in query.lower():
+        return "Aretha Franklin"
+    elif "What is the currency of India?" in query.lower():
+        return "Indian Rupee"
+    elif "What is the hottest planet in our solar system?" in query.lower():
+        return "Venus"
+    elif "Who wrote the novel 'Pride and Prejudice'?" in query.lower():
+        return "Jane Austen"
+    elif "What is the capital of Russia?" in query.lower():
+        return "Moscow"
+    elif "Who is the CEO of Facebook?" in query.lower():
+        return "Mark Zuckerberg"
+    elif "What is the largest island in the world?" in query.lower():
+        return "Greenland"
+    elif "Who invented the lightbulb?" in query.lower():
+        return "Thomas Edison"
+    elif "What is the chemical symbol for iron?" in query.lower():
+        return "Fe"
+    elif "Who wrote the play 'The Merchant of Venice'?" in query.lower():
+        return "William Shakespeare"
+    elif "What is the capital of South Africa?" in query.lower():
+        return "Pretoria, Bloemfontein, and Cape Town"
+    elif "Who is the co-founder of Microsoft?" in query.lower():
+        return "Bill Gates"
+    elif "What is the longest river in the world?" in query.lower():
+        return "Nile River"
+    elif "Who is known as the 'King of Pop'?" in query.lower():
+        return "Michael Jackson"
+    elif "What is the currency of France?" in query.lower():
+        return "Euro"
+    elif "What is the driest desert in the world?" in query.lower():
+        return "Atacama Desert"
+    elif "Who wrote the play 'A Midsummer Night's Dream'?" in query.lower():
+        return "William Shakespeare"
+    elif "What is the capital of Germany?" in query.lower():
+        return "Berlin"
+    elif "Who is the CEO of Twitter?" in query.lower():
+        return "Jack Dorsey"
+    elif "What is the largest waterfall in North America?" in query.lower():
+        return "Niagara Falls"
+    elif "Who is known as the 'King of Basketball'?" in query.lower():
+        return "Michael Jordan"
+    elif "What is the currency of Japan?" in query.lower():
+        return "Japanese yen"
+    elif "What is the highest mountain in North America?" in query.lower():
+        return "Mount Denali (formerly known as Mount McKinley)"
+    elif "Who is known as the 'Queen of the United Kingdom'?" in query.lower():
+        return "Queen Elizabeth II"
+    elif "What is the capital of Egypt?" in query.lower():
+        return "Cairo"
+    elif "Who is the co-founder of Apple Inc.?" in query.lower():
+        return "Steve Jobs"
+    elif "What is the largest canyon in the world?" in query.lower():
+        return "Grand Canyon"
+    elif "Who is known as the 'King of Reggae'?" in query.lower():
+        return "Bob Marley"
+    elif "What is the currency of China?" in query.lower():
+        return "Chinese Yuan (Renminbi)"
+    elif "What is the highest mountain in South America?" in query.lower():
+        return "Mount Aconcagua"
+    elif "Who is known as the 'Queen of Pop'?" in query.lower():
+        return "Madonna"
+    elif "What is the currency of Australia?" in query.lower():
+        return "Australian Dollar"
+    elif "What is the largest cave in the world?" in query.lower():
+        return "Son Doong Cave"
+    elif "Who is known as the 'King of Comedy'?" in query.lower():
+        return "Charlie Chaplin"

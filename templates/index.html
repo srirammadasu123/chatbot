@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>chat bot</title>
+        <meta name="description" content="abcdefghi" />
+        <meta name="keywords" content="svg, animation, organic, shape, animejs, web design, web development, demo" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="static/index.css" />
+        <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+    </head>
+    <body class="demo-1 render">
+        <main>
+        </main>
+    <script>
+        window.watsonAssistantChatOptions = {
+        integrationID: "632523be-f09f-4506-84a1-887403b2d2de", // The ID of this integration.
+        region: "au-syd", // The region your integration is hosted in.
+        serviceInstanceID: "469a0c87-3c6c-495d-9618-5f53ab06be9b", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+            // Load the chat script when the page loads
+        window.onload = loadChatScript;
+    </script>
+    </body>
+</html>

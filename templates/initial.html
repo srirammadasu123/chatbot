@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>#</title>
+
+    <link rel="stylesheet" type="text/css" href="static/initial.css" />
+
+<script>
+    function getRandomColor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    function changeGradientColors() {
+        const body = document.body;
+        const color1 = getRandomColor();
+        const color2 = getRandomColor();
+        body.style.background = `linear-gradient(45deg, ${color1}, ${color2})`;
+    }
+</script>
+<style>
+.btm {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .btm:hover {background-color: #3e8e41}
+  
+  .btm:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  </style>
+</head>
+<body onclick="changeGradientColors()">
+    <section >
+        <h2 class="container">Welcome</h2>
+            <div>
+                <a class="btm" href="{{ url_for('register') }}" >New User</a> <span style="margin: 200px;"></span>
+                <a class="btm" href="{{ url_for('login') }}">Login</a><span style="margin: 200px;"></span>
+                <a href="{{ url_for('index') }}"> try once </a>
+
+            </div>
+
+
+
+    </section>
+
+    
+
+
+    
+
+</body>
+</html>
